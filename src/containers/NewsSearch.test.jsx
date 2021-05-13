@@ -9,6 +9,5 @@ describe('it renders ArticleList Container', () => {
 
     screen.getByAltText('world loading spinner');
 
-
-
+    const ul = await.screen.findByRole('list', {  })
 })
