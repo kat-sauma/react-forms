@@ -2,7 +2,7 @@
 
 1. Service to fetch API Calls
 
-   - http calls with fetch https://newsapi.org/v2/everything
+   - http calls with fetch `https://newsapi.org/v2/everything`
    - /everything endpoint
    - munge json
    - fetch article by keyword `https://newsapi.org/v2/everything?q=${keyword}&apiKey=${APIKEY}`

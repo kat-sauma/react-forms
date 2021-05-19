@@ -1,13 +1,14 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { Spinner } from '../components/spinner/Spinner';
+import NewsSearch from './NewsSearch';
 
 
-describe('it renders ArticleList Container', () => {
-    render(<ArticleList />);
+describe('it renders NewsSearch Container', async () => {
+    render(<NewsSearch />);
 
 
-    screen.getByAltText('world loading spinner');
+    screen.findByAltText('world loading spinner');
 
-    const ul = await.screen.findByRole('list', {  })
+    const ul = await screen.findByRole('list', { name: 'articles' });
+    expect(ul).toMatchSnapshot();
 })
