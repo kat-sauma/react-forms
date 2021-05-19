@@ -1,7 +1,7 @@
 // check API for actual terms to destructure from their data set
 const mungeArticles = (json) =>
     json.map(({ keyword, headline, article }) => ({
-        searchterm: keyword,
+        keyword: keyword,
         title: headline,
         article
     }));
