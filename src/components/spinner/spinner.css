@@ -1,0 +1,10 @@
+figure {
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 600px;
+}
